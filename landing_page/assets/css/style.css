@@ -6,7 +6,7 @@ body {
 }
 
 p {
-  font-family: "Be Vietnam Regular";
+  font-family: "Be Vietnam Thin";
   color: #ffffff;
 }
 
@@ -41,6 +41,14 @@ h6 {
   font-weight: 300;
   font-size: 20px;
   text-align: center;
+  line-height: 44px;
+}
+.navbar-nav > li:nth-child(5) > .nav-link {
+  border-right: none;
+}
+.nav-link {
+  border-right: 1px solid white;
+  padding: 2px 25px !important;
 }
 
 /* HERO SECTION */
@@ -79,35 +87,46 @@ h6 {
 }
 
 .heroHiring {
-  padding-left: 200px;
+  padding: 50px 80px 0;
   font-size: 32px;
   font-weight: 300;
-  padding-top: 330px;
-  width: 970px;
+  width: 100%;
   z-index: 999;
 }
 
 .heroHiring > h1 {
   font-size: 100px;
+  font-weight: 500;
+}
+.heroHiring > p {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 38px;
+  max-width: 970px;
 }
 
 /* CARD SECTION */
 .boxSection {
   background: linear-gradient(rgb(0, 90, 162) 0%, rgba(0, 0, 0, 1) 100%);
   padding: 60px 0;
+  position: relative;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.boxSection::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(rgb(0 89 160 / 0%) 0%, #0059a1 100%);
+  width: 100%;
+  height: 50px;
+  top: -50px;
 }
 
 .card-body {
-  min-width: 420px;
   border: solid 4px #a4bcd0;
   padding: 60px;
   background-color: transparent;
   color: #ffffff;
+  max-width: 520px;
 }
 
 .card-title {
@@ -116,8 +135,9 @@ h6 {
 }
 
 .card-text {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 300;
+  line-height: 28px;
   min-width: 300px;
 }
 
@@ -129,24 +149,28 @@ h6 {
   margin-top: 30px;
   color: #ffffff;
 }
+@media (min-width: 767px) {
+  .ict .card-body {
+    margin-left: 200px;
+  }
 
-.cards > div:nth-child(1) {
-  margin-left: 200px;
-}
-.cards > div:nth-child(2) {
-  margin-top: 145px;
-  margin-left: 385px;
-}
-
-.cards > div:nth-child(3) {
-  margin-left: 330px;
-  margin-top: 200px;
+  .cyber .card-body {
+    margin-right: 200px;
+  }
+  .cyber {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -300px;
+  }
+  .professional .card-body {
+    margin-left: 370px;
+  }
 }
 /*ASSISTENZA SECTION*/
 .supportSection {
-  max-height: 705px;
   background-image: url(/landing_page/assets/image/bgSupportSection.png);
   position: relative;
+  background-size: cover;
 }
 .supportSection::before {
   content: " ";
@@ -170,60 +194,105 @@ h6 {
   z-index: 99;
 }
 .supportInfo {
-  padding-top: 100px;
-  padding-left: 200px;
+  padding: 100px 200px 300px;
 }
 .supportInfo > h2 {
   font-weight: 500;
   font-size: 45px;
-  width: 560px;
-  padding-bottom: 45px;
+  max-width: 560px;
+  padding: 0 0 45px;
+  margin: 0;
+  line-height: 45px;
 }
 .supportInfo > p {
   font-weight: 300;
   font-size: 22px;
-  width: 450px;
-  height: 140px;
+  max-width: 442px;
+  max-height: 140px;
+  line-height: 28px;
+  margin: 0;
 }
 .halfCog {
-  transform: translate(-200px, -120px);
   width: 200px;
+  position: absolute;
+  left: 0px;
+  bottom: 26px;
 }
 .fullCog {
-  transform: translate(-270px, -60px);
   width: 200px;
+  position: absolute;
+  bottom: 35px;
+  left: 125px;
 }
 
 /* NUMBERS */
 
 .numbersSection {
-  height: 505px;
   background-color: black;
 }
 .row {
-  padding-top: 250px;
+  padding: 250px 0 225px;
 }
-.col {
-  height: 200px;
-  padding-right: 65px;
-  padding-left: 65px;
+.numbersSection .row .col {
+  max-height: 200px;
+  padding: 0 50px 0px;
   border-right: 2px #005aa2 solid;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
+  gap: 20px;
 }
-.col:nth-child(4) {
+.row .col:nth-child(4) {
   border: none;
 }
-.numbersSection > .row > .col > h2 {
+.numbersSection .row .col h2 {
   color: #005aa2;
   font-size: 100px;
   font-weight: 500;
   text-align: center;
+  line-height: 96px;
+  margin: 0;
 }
-.numbersSection > .row > .col > p {
+.numbersSection .row .col p {
   font-size: 22px;
   font-weight: 300;
   text-align: center;
+  line-height: 28px;
+  margin: 0;
+}
+/*INFO SECTION*/
+.infoSection {
+  background-image: url(/landing_page/assets/image/bgInfoSection.png);
+}
+.infoSection .container-fluid {
+  padding: 100px;
+}
+.infoSection > .row {
+  padding-top: 200px;
+  padding-left: 210px;
+}
+.us {
+  text-align: start;
+  max-width: 940px;
+}
+.innovation {
+  text-align: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.partner {
+  text-align: end;
+  max-width: 940px;
+}
+.partner-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.infoSection .row .col-md-12 h2 {
+  font-weight: 500;
+  font-size: 100px;
+}
+.infoSection .row .col-md-12 p {
+  font-weight: 300;
+  font-size: 32px;
 }
