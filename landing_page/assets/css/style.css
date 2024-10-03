@@ -47,6 +47,10 @@ h6 {
   border-right: none;
 }
 .nav-link {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 44px;
+  font-family: "Be Vietnam Thin";
   border-right: 1px solid white;
   padding: 2px 25px !important;
 }
@@ -230,7 +234,7 @@ h6 {
 .numbersSection {
   background-color: black;
 }
-.row {
+.numbersSection .container .row {
   padding: 250px 0 225px;
 }
 .numbersSection .row .col {
@@ -263,6 +267,27 @@ h6 {
 /*INFO SECTION*/
 .infoSection {
   background-image: url(/landing_page/assets/image/bgInfoSection.png);
+  position: relative;
+  background-size: cover;
+}
+.infoSection:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(208, 0, 0, 0.4) 40%,
+    rgba(208, 0, 0, 1) 100%
+  );
+}
+.infoSection * {
+  z-index: 99;
 }
 .infoSection .container-fluid {
   padding: 100px;
@@ -273,16 +298,16 @@ h6 {
 }
 .us {
   text-align: start;
-  max-width: 940px;
+  max-width: 860px;
 }
 .innovation {
   text-align: center;
-  max-width: 1300px;
-  margin: 0 auto;
+  max-width: 1060px;
+  margin: 350px auto;
 }
 .partner {
   text-align: end;
-  max-width: 940px;
+  max-width: 730px;
 }
 .partner-container {
   display: flex;
@@ -291,8 +316,107 @@ h6 {
 .infoSection .row .col-md-12 h2 {
   font-weight: 500;
   font-size: 100px;
+  line-height: 96px;
+  padding: 0 0 35px;
 }
 .infoSection .row .col-md-12 p {
   font-weight: 300;
   font-size: 32px;
+}
+/*LOGOS SECTION*/
+.logoSection {
+  background-color: #d00000;
+  padding: 0 350px 130px;
+}
+
+.logoSection .row {
+  padding: 60px 0;
+}
+
+.boxLogo {
+  color: #ffffff7e;
+  padding: 55px 60px;
+  border: solid 3px #ffffff7e;
+  max-width: 255px;
+  max-height: 210px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 96px;
+  text-align: center;
+}
+/*FOOTER*/
+.container-fluid .row .col h2 {
+  font-weight: 500;
+  font-size: 65px;
+  line-height: 70px;
+  color: #005aa2;
+}
+.logoText {
+  max-width: 105px;
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+.rightText {
+  display: flex !important;
+  justify-content: flex-end;
+  padding: 60px 130px 95px;
+}
+.certifyContainer {
+  padding: 135px 100px 0;
+}
+.certifyContainer .row {
+  gap: 80px;
+}
+.col-md-1 p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 38px;
+  color: #005aa2;
+}
+
+.moduleDescription {
+  justify-content: end;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 38px;
+  color: #005aa2;
+  max-width: 715px;
+}
+.contact .col-md-6 {
+  padding: 200px 0 0;
+}
+.contact h2 {
+  padding: 0 0 60px;
+  font-size: 100px;
+  line-height: 96px;
+  font-weight: 500;
+  color: #005aa2;
+}
+.contact p {
+  color: #005aa2;
+  font-size: 32px;
+  line-height: 38px;
+}
+.contactLogoText {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.contactLogoText img {
+  max-width: 30px;
+}
+.social {
+  border-bottom: 1px solid #005aa2;
+}
+.copyright {
+  max-width: 1620px;
+  padding: 30px 100px 85px 200px;
+  font-size: 18.5px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #005aa2;
 }
