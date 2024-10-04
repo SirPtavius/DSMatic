@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -112,7 +112,7 @@ h6 {
 /* CARD SECTION */
 .boxSection {
   background: linear-gradient(rgb(0, 90, 162) 0%, rgba(0, 0, 0, 1) 100%);
-  padding: 60px 0;
+  padding: 0 0 60px;
   position: relative;
 }
 
@@ -134,8 +134,10 @@ h6 {
 }
 
 .card-title {
-  font-size: 50px;
-  padding-bottom: 20px;
+  font-size: 65px;
+  line-height: 65px;
+  padding-bottom: 40px;
+  margin: 0;
 }
 
 .card-text {
@@ -143,6 +145,8 @@ h6 {
   font-weight: 300;
   line-height: 28px;
   min-width: 300px;
+  padding-bottom: 4px;
+  margin: 0;
 }
 
 .btn {
@@ -150,7 +154,7 @@ h6 {
   border: solid 2px white;
   border-radius: 40px;
   width: 200px;
-  margin-top: 30px;
+  margin: 0;
   color: #ffffff;
 }
 @media (min-width: 767px) {
@@ -345,6 +349,8 @@ h6 {
   text-align: center;
 }
 /*FOOTER*/
+
+/* CERTIFY SECTION*/
 .container-fluid .row .col h2 {
   font-weight: 500;
   font-size: 65px;
@@ -377,7 +383,7 @@ h6 {
   line-height: 38px;
   color: #005aa2;
 }
-
+/*FORM DESCRIPTION*/
 .moduleDescription {
   justify-content: end;
   font-weight: 300;
@@ -386,8 +392,10 @@ h6 {
   color: #005aa2;
   max-width: 715px;
 }
+/*CONTACT SECTION*/
 .contact .col-md-6 {
-  padding: 200px 0 0;
+  padding: 200px 0 135px;
+  max-width: 45%;
 }
 .contact h2 {
   padding: 0 0 60px;
@@ -405,16 +413,56 @@ h6 {
   display: flex;
   gap: 10px;
   align-items: center;
+  padding: 5px 0;
 }
 .contactLogoText img {
   max-width: 30px;
 }
-.social {
-  border-bottom: 1px solid #005aa2;
+/*FORM SECTION*/
+.form {
+  color: #005aa2;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 0 !important;
 }
+.form .mb-3 input {
+  border: none;
+  border-radius: 0;
+  border-bottom: 0.5px #005aa2 solid;
+  max-width: 425px;
+}
+.check {
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 14px;
+  padding-top: 45px;
+  padding-bottom: 75px;
+}
+
+.sendBtn {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  color: #005aa2;
+  border: #005aa2 1px solid;
+  margin-bottom: 145px;
+}
+/*SOCIAL ICON SECTION*/
+.social {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  gap: 30px;
+  border-bottom: 1px solid #005aa2;
+  max-height: 160px;
+}
+
+/*FINAL SECTION*/
 .copyright {
   max-width: 1620px;
-  padding: 30px 100px 85px 200px;
+  padding: 30px 100px 0 200px;
   font-size: 18.5px;
   font-weight: 300;
   line-height: 28px;
